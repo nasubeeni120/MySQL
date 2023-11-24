@@ -1,0 +1,9 @@
+SELECT * FROM employee.employees;
+
+SELECT 
+    SALARY, CONCAT(FIRST_NAME, " " ,LAST_NAME) AS 'NAME'
+FROM
+    employees
+WHERE
+    SALARY NOT BETWEEN 10000 AND 15000
+        AND DEPARTMENT_ID IN (30 , 100);

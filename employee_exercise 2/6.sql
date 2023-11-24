@@ -1,0 +1,10 @@
+SELECT * FROM employee.employees;
+
+SELECT 
+    EMPLOYEE_ID, JOB_ID, SALARY
+FROM
+    employees
+WHERE
+    JOB_ID NOT IN ('IT%' , 'SH%')
+        AND SALARY NOT IN (4500 , 10000, 15000);
+-- WHERE SALARY != 4500 AND (!=10000 AND !=15000);

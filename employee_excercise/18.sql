@@ -1,0 +1,5 @@
+SELECT * FROM employee.employees;
+
+SELECT  EMPLOYEE_ID,FIRST_NAME
+FROM employees
+LIMIT 10;

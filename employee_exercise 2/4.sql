@@ -1,0 +1,8 @@
+SELECT * FROM employee.employees;
+
+SELECT 
+    CONCAT(FIRST_NAME, ' ', LAST_NAME) AS "NAME" , HIRE_DATE
+FROM
+    employees
+WHERE
+    YEAR(HIRE_DATE) LIKE "1987%";
